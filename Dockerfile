@@ -1,10 +1,10 @@
-FROM sshd-ubuntu:14.04
+FROM textar/sshd_ubuntu:14.04
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
   apt-get -yq install \
     curl \
     apache2 \
-    libapache2-mod-php5
+    libapache2-mod-php5 \
     php5-mysql \
     php5-gd \
     php5-curl \
